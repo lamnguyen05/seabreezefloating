@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Tour - Sea Breeze</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-waves icon-sea"></i>
+                <span class="logo-text">SeaBreeze</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Trang Chủ</a>
+                <a href="service.html" class="nav-link">Dịch Vụ</a>
+                <a href="food.html" class="nav-link">Ẩm Thực</a>
+                <a href="contact.html" class="nav-link">Liên Hệ</a>
+                <a href="booking.html" class="btn btn-primary btn-book">Đặt Tour</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <button id="menuOpenBtn" aria-label="Menu"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-banner">
+            <img src="https://images.unsplash.com/photo-1540151812223-c30b3fab58e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Đặt Tour">
+            <div>
+                <h1>Gửi Yêu Cầu Đặt Tour</h1>
+            </div>
+        </div>
+
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="section-header" style="margin-bottom: 2rem;">
+                        <h2 class="section-title">Điền Thông Tin Của Bạn</h2>
+                        <p style="color: var(--slate-500); margin-top: 0.5rem;">Nhân viên sẽ gọi lại xác nhận trong vòng 30 phút.</p>
+                    </div>
+
+                    <form action="#" method="POST" class="booking-form">
+                        <h3 class="booking-group-title"><i class="ph-fill ph-compass"></i> Thông Tin Dịch Vụ</h3>
+                        <div class="form-grid">
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <label>Chọn Tour / Dịch vụ *</label>
+                                <select required>
+                                    <option value="">-- Vui lòng chọn --</option>
+                                    <option>Tour Chèo Kayak Khám Phá</option>
+                                    <option>Tour Lặn Ngắm San Hô</option>
+                                    <option>Tour Câu Cá Giải Trí</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Ngày đi dự kiến *</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group" style="display: flex; gap: 1rem;">
+                                <div style="flex: 1;">
+                                    <label>Người lớn</label>
+                                    <input type="number" min="1" value="2">
+                                </div>
+                                <div style="flex: 1;">
+                                    <label>Trẻ em</label>
+                                    <input type="number" min="0" value="0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="booking-group-title"><i class="ph-fill ph-user"></i> Thông Tin Liên Hệ</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Họ và tên *</label>
+                                <input type="text" placeholder="Vd: Nguyễn Văn A" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Số điện thoại (Zalo) *</label>
+                                <input type="tel" placeholder="Vd: 0909..." required>
+                            </div>
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <label>Ghi chú thêm</label>
+                                <textarea rows="3" placeholder="Yêu cầu đón tại khách sạn, dị ứng thức ăn..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit btn-large shadow-glow">Gửi Yêu Cầu Đặt Tour</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <i class="ph-fill ph-waves"></i>
+                <span>SeaBreeze</span>
+            </div>
+            <p class="copyright">© 2026 Sea Breeze Floating. Đã đăng ký bản quyền.</p>
+            <div class="footer-links">
+                <a href="#">Bảo mật</a>
+                <a href="#">Điều khoản</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="menuOverlay" class="menu-overlay"></div>
+    <nav id="menuDrawer" class="menu-drawer">
+        <div class="menu-header">
+            <span class="menu-brand">SeaBreeze</span>
+            <button id="menuCloseBtn" class="menu-close-btn" aria-label="Đóng menu"><i class="ph ph-x"></i></button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="index.html" class="menu-link">Trang Chủ</a></li>
+            <li><a href="service.html" class="menu-link">Dịch Vụ</a></li>
+            <li><a href="food.html" class="menu-link">Ẩm Thực</a></li>
+            <li><a href="contact.html" class="menu-link">Liên Hệ</a></li>
+        </ul>
+        <div class="menu-footer">
+            <a href="booking.html" class="btn btn-primary menu-cta">Đặt Tour Ngay</a>
+        </div>
+    </nav>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

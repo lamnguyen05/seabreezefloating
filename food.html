@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ẩm Thực - Sea Breeze</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-waves icon-sea"></i>
+                <span class="logo-text">SeaBreeze</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Trang Chủ</a>
+                <a href="service.html" class="nav-link">Dịch Vụ</a>
+                <a href="food.html" class="nav-link">Ẩm Thực</a>
+                <a href="contact.html" class="nav-link">Liên Hệ</a>
+                <a href="booking.html" class="btn btn-primary btn-book">Đặt Tour</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <button id="menuOpenBtn" aria-label="Menu"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-banner">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Ẩm thực">
+            <div>
+                <h1>Tinh Hoa Ẩm Thực Biển</h1>
+                <p>Hải sản đánh bắt trong ngày, chế biến theo công thức bản địa</p>
+            </div>
+        </div>
+
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Menu Nhà Hàng SeaBreeze</h2>
+                    <p style="color: var(--slate-600); max-width: 600px; margin: 1rem auto 0;">Thưởng thức bữa tối lãng mạn bên bờ biển với thực đơn hải sản phong phú.</p>
+                </div>
+
+                <div class="food-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gỏi Cá Trích">
+                        </div>
+                        <div class="food-info">
+                            <h4>Gỏi Cá Trích Đặc Sản</h4>
+                            <p>250.000đ / Phần</p>
+                            <p style="color: var(--slate-500); font-weight: 400; margin-top: 0.5rem; font-size: 0.875rem;">Đặc sản trứ danh không thể bỏ qua. Cuốn bánh tráng chấm nước mắm chua ngọt.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="food-card">
+                        <div class="food-img">
+                            <img src="imgs/nhum_nuong.webp" alt="Nhím Biển">
+                        </div>
+                        <div class="food-info">
+                            <h4>Nhum Biển Nướng Mỡ Hành</h4>
+                            <p>15.000đ / Con</p>
+                            <p style="color: var(--slate-500); font-weight: 400; margin-top: 0.5rem; font-size: 0.875rem;">Nhum tươi sống bắt tại rạn san hô, nướng than hoa lửa hồng.</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-img">
+                              <img src="https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cá Nướng">
+                        </div>
+                        <div class="food-info">
+                            <h4>Cá Nướng</h4>
+                            <p>80.000đ / Con</p>
+                            <p style="color: var(--slate-500); font-weight: 400; margin-top: 0.5rem; font-size: 0.875rem;">Cá tươi sống, nướng trên than hoa với gia vị đặc trưng.</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-img">
+                              <img src="imgs/kho_muc.jpeg" alt="Khô Mực">
+                        </div>
+                        <div class="food-info">
+                            <h4>Khô Mực</h4>
+                            <p>60.000đ / Con</p>
+                            <p style="color: var(--slate-500); font-weight: 400; margin-top: 0.5rem; font-size: 0.875rem;">Mực khô được chế biến theo công thức truyền thống, giữ trọn hương vị biển.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <i class="ph-fill ph-waves"></i>
+                <span>SeaBreeze</span>
+            </div>
+            <p class="copyright">© 2026 Sea Breeze Floating. Đã đăng ký bản quyền.</p>
+            <div class="footer-links">
+                <a href="#">Bảo mật</a>
+                <a href="#">Điều khoản</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="menuOverlay" class="menu-overlay"></div>
+    <nav id="menuDrawer" class="menu-drawer">
+        <div class="menu-header">
+            <span class="menu-brand">SeaBreeze</span>
+            <button id="menuCloseBtn" class="menu-close-btn" aria-label="Đóng menu"><i class="ph ph-x"></i></button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="index.html" class="menu-link">Trang Chủ</a></li>
+            <li><a href="service.html" class="menu-link">Dịch Vụ</a></li>
+            <li><a href="food.html" class="menu-link">Ẩm Thực</a></li>
+            <li><a href="contact.html" class="menu-link">Liên Hệ</a></li>
+        </ul>
+        <div class="menu-footer">
+            <a href="booking.html" class="btn btn-primary menu-cta">Đặt Tour Ngay</a>
+        </div>
+    </nav>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
